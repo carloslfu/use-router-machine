@@ -1,7 +1,7 @@
 {
   "name": "use-router-machine",
   "version": "0.1.0",
-  "description": "XState Router. Add routes to your XState machine.",
+  "description": "Hook that let's you use XState as a router.",
   "main": "lib/index.js",
   "files": [
     "lib/"
