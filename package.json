@@ -1,0 +1,48 @@
+{
+  "name": "use-router-machine",
+  "version": "0.1.0",
+  "description": "XState Router. Add routes to your XState machine.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "xstate": "^4.1.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/react": "^16.7.7",
+    "jest": "^23.6.0",
+    "react-testing-library": "^5.3.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.0.3",
+    "xstate": "^4.1.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "keywords": [
+    "xstate",
+    "react",
+    "router",
+    "react-hook",
+    "statecharts",
+    "state-machines",
+    "javascript"
+  ],
+  "repository": "carloslfu/xstate-react-router",
+  "author": "@carloslfu",
+  "license": "MIT",
+  "dependencies": {
+    "history": "^4.7.2",
+    "xstate-router": "^0.1.1"
+  }
+}
