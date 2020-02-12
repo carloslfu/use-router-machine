@@ -4,16 +4,14 @@ import {
   Machine,
   MachineConfig,
   EventObject,
-  MachineOptions,
-  OmniEvent,
   State,
-  StateSchema
-} from 'xstate';
-import { interpret, Interpreter } from 'xstate/lib/interpreter';
+  StateSchema,
+  Interpreter,
+} from 'xstate'
 
 interface HookArgs<TContext, TState extends StateSchema, TEvent extends EventObject> {
   config: MachineConfig<TContext, TState, TEvent>,
-  options: MachineOptions<TContext, TEvent>,
+  options: any,
   initialContext: TContext,
   history?
 }
@@ -50,12 +48,14 @@ export function useRouterMachine<
 
   // Stop the service when unmounting.
   useEffect(() => {
-    return () => service.stop();
+    return () => {
+      service.stop();
+    }
   }, []);
 
   return { state, send: service.send, context, service };
 }
 
 type TSendFn<TContext, TEvent extends EventObject> = (
-  event: OmniEvent<TEvent>
+  event: TEvent
 ) => State<TContext, TEvent>;
