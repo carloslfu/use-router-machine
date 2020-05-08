@@ -42,7 +42,7 @@ export function useRouterMachine<
     setState(service.state)
     setContext(service.machine.context as any)
     service.onTransition(state => setState(state as any));
-    service.onChange(setContext);
+    service.onChange(ctx => setContext(ctx));
     return service;
   }, []);
 
