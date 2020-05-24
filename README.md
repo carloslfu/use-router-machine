@@ -1,5 +1,7 @@
 # use-router-machine
 
+> :warning: DEPRECATED, use `useRouterMachine` from [xstate-router](https://github.com/carloslfu/xstate-router) instead.
+
 Hook that let's you use XState as a router, by using the `meta` property.
 
 Live example: https://codesandbox.io/s/8n06pwy61l
